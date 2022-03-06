@@ -1,0 +1,56 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.container label {
+  font-weight: 500;
+  color: #252525;
+  font-size: 0.9rem;
+}
+
+.container input {
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 8px 10px;
+  outline: none;
+  font-size: 1rem;
+  transition: 200ms;
+  padding-right: 25px;
+}
+
+.container input:hover {
+  border: 1px solid #bbbbbb;
+}
+
+.container input:focus {
+  border: 1px solid #22c48b;
+}
+
+.inputContainer {
+  position: relative;
+}
+
+.inputContainer:hover .icon svg {
+  color: #5a5a5a;
+}
+.inputContainer:focus-within .icon svg {
+  color: #22c48b;
+}
+.inputContainer .icon {
+  position: absolute;
+  right: 4px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputContainer .icon svg {
+  height: 15px;
+  width: 15px;
+  color: #bbb;
+}

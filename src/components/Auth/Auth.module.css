@@ -1,0 +1,93 @@
+.container {
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to right bottom, #22c48b, #54f0b9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  background-color: #fff;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 30px;
+  width: fit-content;
+  min-width: 380px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.smallLink {
+  position: absolute;
+  left: 0%;
+  top: -22px;
+}
+
+.smallLink a {
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 0.95rem;
+  text-decoration: none;
+}
+
+.form .heading {
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+
+.form button {
+  border: none;
+  outline: none;
+  padding: 8px 16px;
+  background-color: #22c48b;
+  color: #fff;
+  border-radius: 5px;
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 200ms;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+.form button:hover {
+  background-color: #33e4a6;
+}
+
+.form button:active {
+  transform: translateY(1px);
+}
+
+.form button:disabled {
+  background-color: gray !important;
+}
+
+.form .error {
+  font-size: 0.875rem;
+  font-weight: bold;
+  color: #f12929;
+  width: 100%;
+  text-align: center;
+}
+
+.form .bottom p {
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.bottom p a {
+  color: #22c48b;
+  font-weight: 600;
+  text-decoration: underline;
+  cursor: pointer;
+}
