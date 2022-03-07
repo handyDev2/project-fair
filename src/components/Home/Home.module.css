@@ -80,6 +80,7 @@
 
 .body .projects {
   display: flex;
+flex-wrap:wrap;
   gap: 30px;
   justify-content: space-evenly;
   align-items: center;
